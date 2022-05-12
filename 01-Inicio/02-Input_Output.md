@@ -2,7 +2,7 @@
 
 Aprenderemos a enviar, mostrar y solicitar datos al usuario.
 
-#### Input
+#### Output
 
 Existen tres tipos de formas de poder mostrar datos por pantalla:
 
@@ -63,4 +63,41 @@ System.out.printf("%010d", numero); // Reemplaza los espacios puestos por 0
 System.out.printf("%.2f", decimal); //%.[numero de decimales]f
 System.out.printf("%,f", decimal);
 System.out.printf("%+f", decimal); //Añade en símbolo
+``` 
+
+***
+
+#### Input
+Para recoger los datos ingresados por el usuario importaremos una utilidad de Java
+
+``` java
+import java.util.Scanner;
+``` 
+
+Y para usarlo instanciaremos la clase `Scanner`, es decir, crearemos un **objeto**.
+
+``` java
+import java.util.Scanner;
+
+public static void main (String[] args){
+	Scanner scanner = new Scanner(System.in);
+} 
+``` 
+
+Cada dato de entrada se debe leer de una manera diferente, no podemos leer un **número entero** como si fuese un **String**.
+
+``` java
+import java.util.Scanner;
+
+public static void main (String[] args){
+	Scanner scanner = new Scanner(System.in);
+    // Leemos un dato de tipo int
+    int numeroUsuario = scanner.nextInt();
+
+    // Leemos un dato de tipo String
+    String nombre = scanner.nextLine();
+
+    // Leemos una dato de tipo double
+    double decimal = scanner.nextDouble();
+} 
 ``` 

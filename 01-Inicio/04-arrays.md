@@ -31,12 +31,12 @@
 
 Algunos de los métodos más útiles son:
 
-+ add([elemento]) -> añadir elementos al array.
-+ size() -> Longitud del array.
-+ get([index]) -> Conseguimos el elemento de dicha posición. 
-+ set([index], [nuevo elemento]) -> Reemplaza un elemento.
-+ remove([index]) -> Elimina un elemento.
-+ clear() -> Limpia el arrayList.
++ `add([elemento])` -> añadir elementos al array.
++ `size()` -> Longitud del array.
++ `get([index])` -> Conseguimos el elemento de dicha posición. 
++ `set([index], [nuevo elemento])` -> Reemplaza un elemento.
++ `remove([index])` -> Elimina un elemento.
++ `clear()` -> Limpia el arrayList.
 
 Para usar un array debemos importar una utilidad
 

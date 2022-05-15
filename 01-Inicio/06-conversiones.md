@@ -16,6 +16,8 @@ Ejemplo:
     }  
 ```
 
+Java hace la conversión por nosotros y pasa de **451** a **451.0**
+
 Output:
 ```
 Numero (int): 451
@@ -36,6 +38,8 @@ public static void main(String[] args) {
     System.out.println("Byte (byte): " + numeroByte);
 } 
 ```
+
+En este ejemplo se usa una declaración explícita al usar `(byte)`, de esta forma, podemos convertir el tipo **int** a **byte** sin ningún tipo de problema.
 
 Output:
 
